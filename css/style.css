@@ -1,51 +1,179 @@
-﻿body {
+body{
     background-color: #621402;
-
+    color: white;
 }
 .container{
-    max-width:1170px;
-    margin:auto;
+    max-width: 1170px;
+    margin: auto;
 }
-.header {
-    background: linear-gradient(180deg, rgba(98, 20, 3, 0.31) 0%, #318989 85.62%), url('../img/bg.jpg') no-repeat center top / cover;
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header{
     min-height: 100vh;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url('C:/projects_html/Cinema/img/bg.jpg') no-repeat center top / cover;
 }
-.navbar {
+.menu{
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    padding-top: 40px;
+    margin: 0;
+    padding-left: 57px;
 }
-.anketa{
+.menu-item{
+    margin-right: 25px;
+}
+.menu-link{
     color: white;
-    margin-top: 0px;
+    text-decoration: none;
+}
+.user{
+    display: flex;
+    align-items: center;  
+    margin-left: auto;
+}
+.name-avatar{
+    color: white;
+    margin-right: 11px;
+}
+.avatar{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.film{
+    margin-top: 60px;
+    color:white;
     display: flex;
     align-items: center;
 }
-.anketa-title {
+.film-title-small{
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+.film-title{
     font-size: 36px;
     line-height: 42px;
     margin-top: 11px;
     margin-bottom: 23px;
 }
-.contacts{
-    margin-right:76%;
+.film-description{
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
 }
-.anketa-text {
-    margin-top: 20px;
+.film-trailer{
+    margin: auto;
 }
-.anketa-margin {
-    margin-left: 50px;
+.film-details{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
 }
-.but {
-    margin-bottom: 70px;
-    width: 200px;
-    height: 50px;
-    background-color: #11f0f0;
-    border-radius: 15px;
-    border: none;
+.time{
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
 }
-.anketa-title-small {
-    opacity 0.5;
+.time-counter{
+    margin-left: 14px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating-icon{
+    margin-right: 14px;
+}
+.rating-current{
     font-size: 24px;
     line-height: 150%;
+}
+.session{
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.session-date-block{
+    display: flex;
+}
+.session-lable{
+    margin-bottom: 20px;
+    display: block;
+}
+.session-date-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    text-align: center;
+    transition: background-color 0.4s;
+}
+.session-month{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sessoion-day{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+.session-week{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+}
+.session-date-item:hover{
+    background-color: #FE8E05;
+    color: #621402;
+}
+.select{
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding: 18px;
+}
+.select-time{
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: white;
+    padding: 18px;
+}
+.scheme{
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+.scheme path:not(.light){
+    fill:rgba(255, 255, 255, 0.2);
+    cursor:pointer;
+}
+.scheme path:not(.light):hover
+{
+    fill:rgba(255, 255, 255, 0.5);
+    
+    fill-opacity:1;
+    /* fill:#FE8E05; */
+}
+.scheme path.booked,
+.scheme path.booked:hover{
+    fill:rgba(8, 8, 8, 0.05);
+    cursor: not-allowed;
+    /* fill:#FE8E05; */
 }
