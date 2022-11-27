@@ -1,0 +1,51 @@
+﻿body {
+    background-color: #621402;
+
+}
+.container{
+    max-width:1170px;
+    margin:auto;
+}
+.header {
+    background: linear-gradient(180deg, rgba(98, 20, 3, 0.31) 0%, #318989 85.62%), url('../img/bg.jpg') no-repeat center top / cover;
+    min-height: 100vh;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.anketa{
+    color: white;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+.anketa-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+.contacts{
+    margin-right:76%;
+}
+.anketa-text {
+    margin-top: 20px;
+}
+.anketa-margin {
+    margin-left: 50px;
+}
+.but {
+    margin-bottom: 70px;
+    width: 200px;
+    height: 50px;
+    background-color: #11f0f0;
+    border-radius: 15px;
+    border: none;
+}
+.anketa-title-small {
+    opacity 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}

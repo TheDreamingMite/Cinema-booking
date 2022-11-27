@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Анкета</title>
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="header">
+        <div class="anketa container navbar">
+            <div class="anketa-info">
+                <small class="anketa-title-small">Змеев Матвей, 204 группа</small><br />
+                <small class="anketa-title-small">Клуб горного туризма</small>
+                <h1 class="anketa-title">Анкета на запись в поход по направлению "Горный туризм""</h1>
+                <form action="index.html" method="post">
+                    <ul>
+                        <li class="anketa-text">
+                            <label for="name">Имя:</label><br />
+                            <input class="anketa-margin" type="text" id="name" name="user_name">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="firstname">Фамилия:</label><br />
+                            <input class="anketa-margin" type="text" id="firstname" name="user_firstname">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="year">Год Вашего рождения:</label><br />
+                            <input class="anketa-margin" type="text" id="year" name="user_year">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="mail">E-mail:</label><br />
+                            <input class="anketa-margin" type="email" id="mail" name="user_mail">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="phone">Ваш телефоный номер:</label><br />
+                            <input class="anketa-margin" type="number" id="phone" name="user_phone">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="vk">Ссылка на вк:</label><br />
+                            <input class="anketa-margin" type="text" id="vk" name="user_vk">
+                        </li>
+                        <li class="anketa-text">
+                            <label for="msg">Занимались ли вы горным туризмом?</label><br />
+                            <INPUT class="anketa-margin" TYPE=RADIO NAME="vopr7" VALUE="Yes"> Да, конечно<br />
+
+                            <INPUT class="anketa-margin" TYPE=RADIO NAME="vopr7" VALUE="No"> Нет, никогда<br />
+
+                            <INPUT class="anketa-margin" TYPE=RADIO NAME="vopr7" VALUE="neznaju" />Только обычным туризмом<br />
+                        </li>
+                        <li class="anketa-text">
+                            <label for="msg">Укажите, какие вещи у Вас есть:  </label><br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v1" CHECKED>Теплая одежда<br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v2" CHECKED>Рюкзак 100+ литров <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v3">Палатка    <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v4">Кошки  <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v5">Горные ботинки <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v6">Веревка    <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v7">Жумары <br />
+                            <INPUT class="anketa-margin" TYPE=CHECKBOX NAME="vopr8" VALUE="v8">Спусковые устройства<br />
+                        </li>
+                        <li class="anketa-text">
+                            <label for="msg">Вы студент?</label>
+                            <SELECT name="student">
+                                <option value=studenTrue>Да
+                                <option value=studentFalse>Нет
+                            </SELECT>
+                        </li>
+                        <li>
+                            <label for="msg">Ваши пожелания:</label><br />
+                            <TEXTAREA name="ВашиПожелания" cols=40 rows=8></TEXTAREA>
+                        </li>
+                    </ul>
+                    <INPUT class="but" TYPE=SUBMIT NAME="anketaName" VALUE="Отправить анкету">
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
